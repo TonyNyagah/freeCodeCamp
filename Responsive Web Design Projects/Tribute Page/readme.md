@@ -1,0 +1,1 @@
+A tribute page made for the freeCodeCamp responsive web design project.
