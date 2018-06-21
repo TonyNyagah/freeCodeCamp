@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <main id="content">
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+        <form action="index_submit" id="survey-form">
+            <label for="name" id="name-label">Name:
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </label>
+            <br>
+            <label for="email" id="email-label">Email:
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            </label>
+            <br>
+            <label for="number" id="number-label"> Age:
+                <input type="number" name="age" id="number" placeholder="Enter your age" min="8" max="90" required>
+            </label>
+            <br>
+            <label for="role"> Which option best describes your current role?
+                <select name="role" id="dropdown">
+                    <option value="1">Student</option>
+                    <option value="2">Fulltime job</option>
+                    <option value="3">Fulltime learner</option>
+                    <option value="4">Prefer not to say</option>
+                    <option value="5">Other</option>
+                </select>
+            </label>
+            <br>
+            <label for="ratings">How likely is that you would recommend freeCodeCamp to a friend?
+                <ul>
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="radio-butons" class="ratings" value="1">Definitely</label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="radio-butons" class="ratigs" value="2">Maybe</label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="radio-butons" class="ratings" value="3">Not sure</label>
+                    </li>
+                </ul>
+            </label>
+            <br>
+            <label for="like"> What do you like most in FCC:
+                <select name="like" id="dropdown">
+                    <option value="1">challenges</option>
+                    <option value="2">Projects</option>
+                    <option value="3">community</option>
+                    <option value="4">Open Source</option>
+                </select>
+            </label>
+            <br>
+            <label for="improvement">Things that should be improved in the future (Check all that apply):
+                <ul>
+                    <li class="check">
+                        <label>
+                            <input type="checkbox" name="check" class="improvements" value="1">Front-end Projects</label>
+                    </li>
+                    <li class="check">
+                        <label>
+                            <input type="checkbox" name="check" class="improvements" value="2">Back-end Projects</label>
+                    </li>
+                    <li class="check">
+                        <label>
+                            <input type="checkbox" name="check" class="improvements" value="3">Data Visualization</label>
+                    </li>
+                    <li class="check">
+                        <label>
+                            <input type="checkbox" name="check" class="improvements" value="4">Challenges</label>
+                    </li>
+                </ul>
+            </label>
+            <br>
+            <label for="comments">Any Comments or Suggestions?
+                <textarea name="comments" id="commemts"></textarea>
+            </label>
+            <br>
+            <label for="button"><button type="submit" id="submit">Submit</button></label>
+        </form>
+    </main>
+</body>
+
+</html>
