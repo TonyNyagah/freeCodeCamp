@@ -9,19 +9,52 @@ body {
 }
 
 #title {
-	text-align: center;
+    text-align: center;
 }
 
 main {
-	background-color: white;
-	margin: 0 auto;
-	border-radius: 4px;
-	width: 75%;
-	max-width: 900px;
-	padding: 10px;
-	padding-top: 20px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 75%;
+    max-width: 900px;
+    padding: 10px;
+    padding-top: 20px;
 }
 
-ul, li {
-	list-style: none;
+ul,
+li {
+    list-style: none;
 }
+
+.label {
+	grid-area: label;
+}
+
+.right {
+	grid-area: right;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-areas: 
+	    "label label label label right right right right";
+	padding: 5px;
+	align-items: center;
+}
+
+
+.label {
+	text-align: right;
+	padding: 5px;
+	margin-right: 10px;
+}
+
+.right {
+	text-align: left;
+	margin-left: 5px; 
+}
+
+
+
